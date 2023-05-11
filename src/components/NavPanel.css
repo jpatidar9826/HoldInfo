@@ -1,0 +1,146 @@
+.nav-container {
+  font-family: "Oswald", sans-serif;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 30px 0 30px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+}
+
+.title-wrap {
+  padding: 10px;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  margin: auto 0px;
+  width: 80%;
+  height: fit-content;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: fit-content;
+  padding: 10px;
+}
+
+
+.center-container button {
+  font-family: "Oswald", sans-serif;
+  background-color: #f8f9fa;
+  border: 0;
+  box-shadow: 0 0 2px #ddd;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.center-container a {
+  font-family: "Oswald", sans-serif;
+  background-color: #f8f9fa;
+  color: black;
+  border: 0;
+  box-shadow: 0 0 2px #ddd;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: fit-content;
+}
+
+.right-container a {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  background-color: #3dc6c1;
+  box-shadow: 0 0 2px #ddd;
+  color: #fff;
+  border: 0;
+  padding: 6px 20px;
+  margin: auto 10px;
+  border-radius: 10px;
+}
+.right-container svg {
+  margin: 0 5px;
+}
+
+.slider-background {
+  width: 60px;
+  height: 28px;
+  border-radius: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 2px #ddd;
+  padding: 4px;
+  transition: 0.4s;
+}
+.slder-right {
+  margin-left: 50%;
+}
+.slider-ball {
+  height: 100%;
+  width: 50%;
+  border-radius: 20px;
+  background-color: #3dc6c1;
+  transition: all 0.4s;
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    flex-direction: row;
+  }
+  .title-container {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: start;
+    padding: 0px 10px 10px 10px;
+  }
+
+  .center-container {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 10px;
+    margin: auto;
+  }
+  .center-container button{
+    font-size: 20px;
+    margin: 10px;
+  }
+  .center-container a{
+    font-size: 20px;
+    margin: 10px;
+  }
+  .right-container {
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: end;
+    margin: auto;
+  }
+  .right-container a{
+    font-size: 20px;
+    margin: auto 10px;
+  }
+  .slider-background{
+    margin: 10px;
+  }
+
+}
